@@ -69,6 +69,7 @@ ul {
 
 .navigation-list-item {
   display: block;
+  position: relative;
   padding: 24px 0;
   font-weight: 500;
   font-size: 16px;
@@ -77,9 +78,12 @@ ul {
   color: #2e2f42;
 }
 
-.navigation-list-item::after {
+.navigation-list-item:hover:after {
   content: "";
   display: block;
+  position: absolute;
+  bottom: -1px;
+  padding: 0 50%;
 
   height: 4px;
   width: 48px;
