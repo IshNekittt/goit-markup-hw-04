@@ -80,11 +80,15 @@ ul {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #404bbf;
+  color: #2e2f42;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.navigation-list-item::after {
+.navigation-list li:nth-child(1) .navigation-list-item {
+  color: #404bbf;
+}
+
+.navigation-list li:nth-child(1) .navigation-list-item:after {
   content: "";
   display: block;
   position: absolute;
@@ -141,6 +145,7 @@ ul {
 
   text-transform: capitalize;
   padding: 188px 0;
+  margin: 0 auto;
 }
 
 .solutions-section-header {
@@ -272,6 +277,17 @@ ul {
 }
 
 .advantages-section-list-item .card-header {
+  margin-bottom: 8px;
+}
+
+.advantages-section-list-item-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 112px;
+  background: #f4f4fd;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
   margin-bottom: 8px;
 }
 
