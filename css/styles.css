@@ -77,6 +77,16 @@ ul {
   color: #2e2f42;
 }
 
+.navigation-list-item::after {
+  content: "";
+  display: block;
+
+  height: 4px;
+  width: 48px;
+  border-radius: 2px;
+  background: #404bbf;
+}
+
 .navigation-list-item:hover,
 .navigation-list-item:focus {
   color: #404bbf;
@@ -107,6 +117,16 @@ ul {
 
 .solutions-section {
   background-color: #2e2f42;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+
   text-transform: capitalize;
   padding: 188px 0;
 }
