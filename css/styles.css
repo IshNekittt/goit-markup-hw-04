@@ -439,3 +439,11 @@ ul {
   color: #fff;
   margin-bottom: 16px;
 }
+
+.footer-section .social-media-list {
+  gap: 24px;
+}
+.footer-section .social-media-list-item-link:hover,
+.footer-section .social-media-list-item-link:focus {
+  background-color: #31d0aa;
+}
